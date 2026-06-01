@@ -168,7 +168,7 @@
         }
 
         .header-left { display: flex; align-items: center; gap: 10px; }
-        .header-avatar { font-size: 1.5rem; }
+        .header-avatar { display:inline-flex; width:32px; height:32px; align-items:center; vertical-align:middle; }
         .header-name { font-weight: 700; font-size: 1.05rem; }
         .week-badge {
             background: var(--surface2);
@@ -362,7 +362,7 @@
             display: flex; align-items: center; gap: 12px;
         }
 
-        .activity-icon { font-size: 1.3rem; }
+        .activity-icon { display:inline-flex; width:28px; height:28px; align-items:center; vertical-align:middle; }
         .activity-text { flex: 1; font-size: 0.88rem; color: var(--muted); }
         .activity-text strong { color: var(--text); font-weight: 600; }
         .activity-time { font-size: 0.75rem; color: var(--muted); }
@@ -427,22 +427,22 @@
 
     <div class="user-grid">
         <div class="user-card card-stu" onclick="selectUser('stu')">
-            <div class="avatar-ring">👨</div>
+            <div class="avatar-ring"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><path d="M16 31 Q14.5 22 22 18" stroke="#2c1a0e" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M48 31 Q49.5 22 42 18" stroke="#2c1a0e" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="15" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="49" cy="36" rx="3" ry="4" fill="#e0a870"/><rect x="17" y="28" width="12" height="9" rx="3" fill="none" stroke="#444" stroke-width="2"/><rect x="35" y="28" width="12" height="9" rx="3" fill="none" stroke="#444" stroke-width="2"/><line x1="29" y1="32.5" x2="35" y2="32.5" stroke="#444" stroke-width="2"/><line x1="17" y1="32.5" x2="12" y2="33" stroke="#444" stroke-width="1.8"/><line x1="47" y1="32.5" x2="52" y2="33" stroke="#444" stroke-width="1.8"/><circle cx="23" cy="32.5" r="2.2" fill="#2d1a0f"/><circle cx="41" cy="32.5" r="2.2" fill="#2d1a0f"/><circle cx="22.2" cy="31.5" r="0.7" fill="white" opacity="0.7"/><circle cx="40.2" cy="31.5" r="0.7" fill="white" opacity="0.7"/><path d="M30 39 Q32 41 34 39" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M26 45 Q32 50 38 45" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
             <div class="user-name">Stu</div>
             <div class="user-role">Admin</div>
         </div>
         <div class="user-card card-louise" onclick="selectUser('louise')">
-            <div class="avatar-ring">👩</div>
+            <div class="avatar-ring"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="31" rx="20" ry="23" fill="#1a0e08"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
             <div class="user-name">Louise</div>
             <div class="user-role">Admin</div>
         </div>
         <div class="user-card card-saf" onclick="selectUser('saf')">
-            <div class="avatar-ring">👧</div>
+            <div class="avatar-ring"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><circle cx="11" cy="40" r="8" fill="#a87030"/><circle cx="53" cy="40" r="8" fill="#a87030"/><ellipse cx="32" cy="31" rx="20" ry="23" fill="#a87030"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
             <div class="user-name">Saf</div>
             <div class="user-role">Tasks this week</div>
         </div>
         <div class="user-card card-anya" onclick="selectUser('anya')">
-            <div class="avatar-ring">👧🏻</div>
+            <div class="avatar-ring"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="30" rx="20" ry="24" fill="#c8a84a"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
             <div class="user-name">Anya</div>
             <div class="user-role">Tasks this week</div>
         </div>
@@ -558,11 +558,17 @@ const app = initializeApp(FIREBASE_CONFIG);
 const db  = getFirestore(app);
 
 // ── Users ────────────────────────────────────────────────
+const AVATARS = {
+    stu:    `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><path d="M16 31 Q14.5 22 22 18" stroke="#2c1a0e" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M48 31 Q49.5 22 42 18" stroke="#2c1a0e" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="15" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="49" cy="36" rx="3" ry="4" fill="#e0a870"/><rect x="17" y="28" width="12" height="9" rx="3" fill="none" stroke="#444" stroke-width="2"/><rect x="35" y="28" width="12" height="9" rx="3" fill="none" stroke="#444" stroke-width="2"/><line x1="29" y1="32.5" x2="35" y2="32.5" stroke="#444" stroke-width="2"/><line x1="17" y1="32.5" x2="12" y2="33" stroke="#444" stroke-width="1.8"/><line x1="47" y1="32.5" x2="52" y2="33" stroke="#444" stroke-width="1.8"/><circle cx="23" cy="32.5" r="2.2" fill="#2d1a0f"/><circle cx="41" cy="32.5" r="2.2" fill="#2d1a0f"/><circle cx="22.2" cy="31.5" r="0.7" fill="white" opacity="0.7"/><circle cx="40.2" cy="31.5" r="0.7" fill="white" opacity="0.7"/><path d="M30 39 Q32 41 34 39" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M26 45 Q32 50 38 45" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg>`,
+    louise: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="31" rx="20" ry="23" fill="#1a0e08"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg>`,
+    saf:    `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><circle cx="11" cy="40" r="8" fill="#a87030"/><circle cx="53" cy="40" r="8" fill="#a87030"/><ellipse cx="32" cy="31" rx="20" ry="23" fill="#a87030"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg>`,
+    anya:   `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%"><ellipse cx="32" cy="30" rx="20" ry="24" fill="#c8a84a"/><ellipse cx="32" cy="35" rx="17" ry="19" fill="#f5c89a"/><ellipse cx="14" cy="36" rx="3" ry="4" fill="#e0a870"/><ellipse cx="50" cy="36" rx="3" ry="4" fill="#e0a870"/><circle cx="25" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="39" cy="32" r="2.5" fill="#2d1a0f"/><circle cx="24" cy="31" r="0.8" fill="white" opacity="0.7"/><circle cx="38" cy="31" r="0.8" fill="white" opacity="0.7"/><path d="M30 37.5 Q32 39.5 34 37.5" stroke="#c89060" stroke-width="1.2" fill="none"/><path d="M25 43 Q32 48 39 43" stroke="#b07050" stroke-width="2" fill="none" stroke-linecap="round"/></svg>`,
+};
 const USERS = {
-    stu:    { name: 'Stu',    avatar: '👨',  color: '#5b7fff', adult: true  },
-    louise: { name: 'Louise', avatar: '👩',  color: '#ff4da6', adult: true  },
-    saf:    { name: 'Saf',    avatar: '👧',  color: '#b06fff', adult: false },
-    anya:   { name: 'Anya',   avatar: '👧🏻', color: '#00d4f5', adult: false },
+    stu:    { name: 'Stu',    avatar: AVATARS.stu,    color: '#5b7fff', adult: true  },
+    louise: { name: 'Louise', avatar: AVATARS.louise, color: '#ff4da6', adult: true  },
+    saf:    { name: 'Saf',    avatar: AVATARS.saf,    color: '#b06fff', adult: false },
+    anya:   { name: 'Anya',   avatar: AVATARS.anya,   color: '#00d4f5', adult: false },
 };
 
 // ── State ────────────────────────────────────────────────
@@ -665,7 +671,7 @@ function showKidView() {
     const list = kidList(currentUser);
     const wk   = weekKey();
 
-    document.getElementById('kidAvatar').textContent    = u.avatar;
+    document.getElementById('kidAvatar').innerHTML      = u.avatar;
     document.getElementById('kidName').textContent      = u.name;
     document.getElementById('kidWeekBadge').textContent = weekLabel();
     document.getElementById('kidView').style.display    = 'block';
@@ -755,7 +761,6 @@ function showKidView() {
                 type:      'completion',
                 kid:       currentUser,
                 kidName:   u.name,
-                kidAvatar: u.avatar,
                 taskTitle: task?.title || '',
                 taskList:  list,
                 weekKey:   wk2,
@@ -770,7 +775,7 @@ function showKidView() {
 // ── Adult View ───────────────────────────────────────────
 function showAdultView() {
     const u = USERS[currentUser];
-    document.getElementById('adultAvatar').textContent    = u.avatar;
+    document.getElementById('adultAvatar').innerHTML      = u.avatar;
     document.getElementById('adultName').textContent      = u.name;
     document.getElementById('adultWeekBadge').textContent = weekLabel();
     document.getElementById('adultView').style.display    = 'block';
@@ -799,7 +804,7 @@ function loadKidsProgress() {
             <div class="kid-summary-card" id="${cid}">
                 <div class="kid-summary-top">
                     <div class="kid-summary-left">
-                        <span style="font-size:1.3rem">${u.avatar}</span>
+                        <span style="display:inline-flex;width:30px;height:30px;align-items:center;vertical-align:middle">${u.avatar}</span>
                         <strong>${u.name}</strong>
                         <span class="kid-chip">List ${list}</span>
                     </div>
@@ -845,7 +850,7 @@ function loadActivityFeed() {
         lbl.style.display = 'block';
         fd.innerHTML = items.map(item => `
             <div class="activity-item">
-                <span class="activity-icon">${item.kidAvatar}</span>
+                <span class="activity-icon">${USERS[item.kid]?.avatar ?? item.kidAvatar ?? ''}</span>
                 <div class="activity-text">
                     <strong>${esc(item.kidName)}</strong> completed <strong>${esc(item.taskTitle)}</strong>
                 </div>
